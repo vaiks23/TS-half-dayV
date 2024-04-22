@@ -15,4 +15,4 @@ In order to view how the front end should behave at different stages of the proc
 tsc day1.ts
 ```
 
-Then click Go Live (live0-server extension) over index.html.
+Then click Go Live (live-server extension) over index.html.
