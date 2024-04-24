@@ -29,7 +29,7 @@ console.log(mutableBalance);
 // 6) compile the file to JS. this time put it it watch mode.
 // tsc -w day1.ts
 
-// PRIMITIVE TYPES CHALLENGE///////////////////////////////////////////////
+// 7) PRIMITIVE TYPES CHALLENGE///////////////////////////////////////////////
 //CHALLENGE - 10min
 
 // a) Declare variables of the following types and assign them appropriate values. Use type annotations. Log the value of each variable to the console. Log the type of each variable to the console.

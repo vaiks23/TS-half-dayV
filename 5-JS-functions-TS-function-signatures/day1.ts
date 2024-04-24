@@ -35,7 +35,7 @@ const transactionsArea = document.getElementById(
 ) as HTMLDivElement;
 transactionsArea.innerHTML = `<ul> ${el1} ${el2}</ul>`;
 
-// FUNCTIONS //////////////////////////////////////////////////////////
+// 1) FUNCTION DECLARATION //////////////////////////////////////////////////////////
 
 function sayHello(): void {
   console.log("Hello from function declaration");
@@ -43,7 +43,7 @@ function sayHello(): void {
 
 sayHello();
 
-// ARROW FUNCTIONS
+// 2) ARROW FUNCTIONS ///////////////////////////////////////////////////////////////
 
 const sayHelloArrow = (): void => {
   console.log("Hello from an arrow function");
@@ -51,7 +51,7 @@ const sayHelloArrow = (): void => {
 
 sayHelloArrow();
 
-// FUNCTION TYPE SIGNAUTRES
+// 3) FUNCTION TYPE SIGNAUTRES /////////////////////////////////////////////////////
 
 const balance: number = 0;
 
@@ -64,11 +64,11 @@ const processTransaction = (transaction: TransactionType): number => {
 processTransaction(transaction1);
 console.log(balance);
 
-// FUNCTIONS GETTING CALLED BY DOM EVENTS /////////////////////////////////////////////////////////
+// 4) FUNCTIONS GETTING CALLED BY DOM EVENTS /////////////////////////////////////////////////////////
 // give processTransaction function to a button as an onclick property
 // demonstrate that the function is called when the button is clicked
 
-// CHALLENGE //////////////////////////////////////////////////////////
+// 5) CHALLENGE //////////////////////////////////////////////////////////
 // create a function that, when called, logs user1 in by setting the loggedIn property of user1 to true
 // give this function to the button as an onclick property
 // render a welcome message to the user on the page when they are logged in

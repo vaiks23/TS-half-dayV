@@ -38,10 +38,12 @@ const transactionsArea = document.getElementById(
 ) as HTMLDivElement;
 transactionsArea.innerHTML = `<ul> ${el1} ${el2}</ul>`;
 
-// 2 CHALLENGE /////////////////////////////////////////////////////////////////////////////////
+// 2) CHALLENGE /////////////////////////////////////////////////////////////////////////////////
 //a) Choose one of the users we created before and render their name to the web page.
 //b) Render their name to the webpage ONLY IF their loggedIn property is true, else render to the page a message saying "User is not logged in"
 // Note: b has not been demonstrated but you can work this out based on knowledge of if/else in any other language and using a search engine if needed.
+
+// SOLUTIONS /////////////////////////////////////////////////////////////////////////////////
 
 // SOLUTION for a.
 // create heading element in HTML with id userGreet
@@ -57,5 +59,5 @@ if (user1.loggedIn) {
   userGreet.innerHTML = `User is not logged in`;
 }
 
-// option to discuss ternary operator
+// 3) TERNARY OPERATOR ////////////////////////////////////////////////////////////////////////
 // userGreet.innerHTML = user1.loggedIn ? `Hello ${user1.name}` : `User is not logged in`;
