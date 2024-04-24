@@ -26,15 +26,24 @@ const logIn = (): void => {
   greetUserEl.innerHTML = `<h2>Welcome, ${user1.name}</h2>`;
 };
 
-// FORMS //////////////////////////////////////////
+// 1) FORMS //////////////////////////////////////////
 // build the HTML form in the index.html file
 
-// ARRAY METHODS //////////////////////////////////////////
+// 2) ARRAY METHODS //////////////////////////////////////////
 const exampleArray: string[] = ["cat", "dog"];
 exampleArray.push("hamster");
 console.log(exampleArray);
 
-// CHALLENGE: ALLOWING USER TO ADD A TRANSACTION //////////////////////////////////////////
+// 3) SJ - ADDING A NEW ELEMENT TO EXISTING ARRAY AND CREATING A NEW ARRAY ///////////////
+// use Spread operator to create new array without mutating the original array
+const newExampleArray: string[] = [...exampleArray, "fish"];
+console.log(newExampleArray);
+
+// 4) SJ - ARRAY DESTRUCTURING ////////////////////////////////////////
+const [firstAnimal, secondAnimal] = newExampleArray;
+console.log(firstAnimal, secondAnimal);
+
+// 5) CHALLENGE: ALLOWING USER TO ADD A TRANSACTION //////////////////////////////////////////
 // create a function thatm when called, adds a new transaction to the transactions array
 // and logs the updated array to the console
 // HINT: When the user types in an HTML input box, the user's input is stored as a property of the input element.

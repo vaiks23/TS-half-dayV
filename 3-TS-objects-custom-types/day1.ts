@@ -58,12 +58,12 @@ const transactions2: Array<TransactionType> = [transaction1, transaction2];
 // f) Log to the console the name of the second entry in your users array.
 
 // CHALLENGE SOLUTIONS ////////////////////////////////////////////
-type UserType = { name: string; age: number; loggedIn: boolean };
+type UserType = { username: string; age: number; loggedIn: boolean };
 
-const user1: UserType = { name: "Matt", age: 25, loggedIn: true };
+const user1: UserType = { username: "Matt", age: 25, loggedIn: true };
 console.log(user1);
 
-const user2: UserType = { name: "Tamsin", age: 30, loggedIn: false };
+const user2: UserType = { username: "Tamsin", age: 30, loggedIn: false };
 
 console.log(user1.age);
 
@@ -72,4 +72,12 @@ console.log(users);
 
 console.log(users[0]);
 
-console.log(users[1].name);
+console.log(users[1].username);
+
+// 7. SJ - using spread operator
+let newcustomer: UserType = { ...user2, age: 31 };
+console.log(newcustomer);
+
+//8. SJ - destructuring
+let { username, age } = user2;
+console.log(username, age);

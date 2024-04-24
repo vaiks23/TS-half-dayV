@@ -28,7 +28,7 @@ const newTransaction = () => {
   updateDisplay();
 };
 
-// FOREACH METHOD
+// 1) FOREACH METHOD
 transactions.forEach((transaction) => {
   console.log(`${transaction.description} of ${transaction.amount}`);
 });
